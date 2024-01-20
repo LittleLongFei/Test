@@ -16,6 +16,15 @@ st.set_page_config(
 )
 
 
+st.markdown(
+    "<span style='font-family: songti; font-size: 24px;'>这是自定义字体和字号的文本</span>",
+    unsafe_allow_html=True
+)
+
+# 或者，使用st.write和HTML直接设置
+st.write("<span style='font-family: Times New Roman; font-size: 18px;'>另一段自定义字体和字号的文本</span>", unsafe_allow_html=True)
+
+
 # 头像
 col11, col12, col13, col14 = st.columns([1,1,1.5,1.5])
 with col13:
